@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    --font-outfit: 'Outfit', system-ui, -apple-system, sans-serif;
+    
+    /* Dark Theme */
+    --background: 0 0% 7%; /* Very dark gray/black */
+    --foreground: 0 0% 98%; /* Almost white */
+    --card: 0 0% 10%; /* Dark gray */
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 7%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%; /* Almost white */
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 15%; /* Dark gray */
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 60%;
+    --accent: 0 0% 15%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 20%; /* Dark border */
+    --input: 0 0% 15%;
+    --ring: 0 0% 30%;
+    --radius: 0.5rem; /* 8px */
+    
+    /* Brand accent color - white-redpink */
+    --brand-primary: 330 81% 95%; /* Light pink */
+    --brand-secondary: 250 100% 95%; /* Light purple */
+    
+    --sidebar-background: 0 0% 7%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 0 0% 98%;
+    --sidebar-primary-foreground: 0 0% 9%;
+    --sidebar-accent: 0 0% 15%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 0 0% 20%;
+    --sidebar-ring: 0 0% 30%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  /* Apply Outfit to the entire website */
+  html,
+  body,
+  * {
+    font-family: 'Outfit', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  }
+  
+  body {
+    @apply bg-[#0A0A0A] text-white;
+  }
+  
+  /* Override: Canvas text elements use their inline font styles */
+  [data-canvas-text],
+  [data-canvas-text] * {
+    font-family: var(--element-font) !important;
+  }
+  
+  /* Override: Font dropdown elements show preview in their own fonts */
+  [data-font-dropdown],
+  [data-font-dropdown] * {
+    font-family: var(--preview-font) !important;
+  }
+}
+
+/* Brand Gradients - White-Redpink Main Color */
+.bg-brand-gradient {
+  background: linear-gradient(135deg, #fff0f5 0%, #ffd1db 100%);
+}
+
+.text-brand-gradient {
+  background: linear-gradient(135deg, #fff0f5 0%, #ffd1db 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg-dalley-gradient {
+  background: linear-gradient(135deg, #fff0f5 0%, #ffd1db 100%);
+}
+
+/* Modern card effect */
+.modern-card {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.modern-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Smooth animations */
+* {
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+}
+
+/* Modern scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.3);
+  background-clip: padding-box;
+}

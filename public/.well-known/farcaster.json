@@ -1,0 +1,18 @@
+{
+  "frame": {
+    "version": "1",
+    "name": "Animated UI",
+    "iconUrl": "https://usdozf7pplhxfvrl.public.blob.vercel-storage.com/thumbnail_e21a635c-0632-4a5c-8d32-57ce1d855631-mM6wZTkXIIehXIVHH7L2w108WfaLnA",
+    "homeUrl": "https://plural-poem-676.preview.series.engineering",
+    "imageUrl": "https://usdozf7pplhxfvrl.public.blob.vercel-storage.com/thumbnail_e21a635c-0632-4a5c-8d32-57ce1d855631-mM6wZTkXIIehXIVHH7L2w108WfaLnA",
+    "buttonTitle": "Open with Ohara",
+    "splashImageUrl": "https://cdn.builder.io/api/v1/image/assets/TEMP/9756b3248bdd48d596519e7d98958e9df5588654dadf0bb17a71fc435bcb37b3?placeholderIfAbsent=true&apiKey=ad3941e5ec034c87bd50708c966e7b84",
+    "splashBackgroundColor": "#ffffff",
+    "tags": [
+      "ohara",
+      "mini-app",
+      "base",
+      "farcaster"
+    ]
+  }
+}
